@@ -429,7 +429,7 @@
                         height: clientWidth < 450 ? '40px' : '48px',
                         left: '2%',
                     }" type="text" maxlength="15" class="layui-input tl-rtc-file-create-room-input" v-model="roomId"
-                    :placeholder="lang.input_room_num">
+                    :placeholder="lang.input_room_num" @keyup.enter="createFileRoom">
                 <button :style="(clientWidth < 450) ? 'height:40px;' : '' " class="tl-rtc-file-create-room-btn"
                     @click="createFileRoom">
                     <i v-show="clientWidth > 450" class="layui-icon layui-icon-search"></i>
